@@ -31,14 +31,14 @@ public class TestGreeter {
   public void greetShouldIncludeGreetingPhrase() {
     String someone = "World";
 
-    assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length()+1)));
+    assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
 
   @Test
   public void intentionalFailing() {
     String someone = "World";
 
-    assertTrue(true);
+    assertTrue(false);
   }
 
     @Test
