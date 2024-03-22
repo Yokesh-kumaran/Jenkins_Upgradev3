@@ -69,10 +69,10 @@ pipeline {
 void auditTools() {
     bat '''
         // Run 'git --version' command and capture the output
-        def gitVersion = bat(script: 'git --version', returnStdout: true).trim()
+        gitVersion = bat(script: 'git --version', returnStdout: true).trim()
                     
         // Display the Git version
-        echo "Git version: ${gitVersion}"
+        echo "Git version: %gitVersion%"
 
         java -version
         mvn -version
