@@ -56,7 +56,7 @@ pipeline {
        //     cleanWs()
        // }
    // }
-//}
+}
 
 //String getBuildVersion() {
   //  if (params.RELEASE) {
